@@ -8,6 +8,7 @@ param(
 #$TenantId="<TENANT-ID>"
 #$ResourceGroup = "{SCEPMAN AZURE WEB APP RESOURCE GROUP}"
 #$WebAppName="{SCEPMAN AZURE WEB APP NAME}"
+Connect-AzAccount
 $ServicePrincipalId = (Get-AzWebApp -ResourceGroupName $ResourceGroup -Name $WebAppName).Identity.PrincipalId
 $PermissionName = "SCEP_CHALLENGE_PROVIDER"
 
