@@ -54,7 +54,7 @@
                 "azPowerShellVersion": "5.0",
                 "timeout": "PT30M",
                 //"scriptContent": "Write-Host 'Hello World'",
-                "primaryScriptUri": "https://raw.githubusercontent.com/scepman/install/feature-certmaster/addpermissions.ps1",
+                "primaryScriptUri": "https://github.com/shobhitvaish/install/blob/feature-certmaster/addpermissions.ps1",
                 "cleanupPreference": "OnSuccess",
                 "retentionInterval": "P1D",
                 "arguments": "[concat('-TenantId \"', subscription().tenantId, '\" -ResourceGroup \"', parameters('location'), '\" -WebAppName \"scepman-webapp\"')]"
